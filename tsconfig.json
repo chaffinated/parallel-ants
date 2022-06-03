@@ -1,0 +1,41 @@
+{
+  "include": [
+    "components",
+    "pages",
+    "services",
+    "store",
+    "types",
+    "utils"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "importsNotUsedAsValues": "preserve",
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "*"
+      ]
+    },
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "target": "es6",
+    "module": "esnext",
+    "jsx": "preserve",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "incremental": true
+  }
+}
