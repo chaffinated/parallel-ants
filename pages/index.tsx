@@ -123,23 +123,6 @@ function Landing(props: LandingProps) {
                   : null 
                 }
               </Flex>
-
-              <Dialog show={shouldShowResetDialog} onClose={closeResetDialog} dismissOnClickBackground>
-                <Text variant='h2'>
-                  Warning!
-                </Text>
-                <Text variant='p'>
-                  Are you sure you want to reset the rankings?
-                </Text>
-                <Flex flexDirection='row' justifyContent='flex-end' width='100%' spacingX={[1]}>
-                  <Button variant='alertInverted' onClick={closeResetDialog}>
-                    Cancel
-                  </Button>
-                  <Button variant='alert' onClick={reset}>
-                    Reset
-                  </Button>
-                </Flex>
-              </Dialog>
             </Box>
 
             <Container paddingY={[2, 3]}>
@@ -192,6 +175,23 @@ function Landing(props: LandingProps) {
           </Flex>
         </Container>
       </Flex>
+
+      <Dialog show={shouldShowResetDialog} onClose={closeResetDialog} dismissOnClickBackground>
+        <Text variant='h2'>
+          Warning!
+        </Text>
+        <Text variant='p'>
+          Are you sure you want to reset the rankings?
+        </Text>
+        <Flex flexDirection='row' justifyContent='flex-end' width='100%' spacingX={[1]}>
+          <Button variant='alertInverted' onClick={closeResetDialog}>
+            Cancel
+          </Button>
+          <Button variant='alert' onClick={reset}>
+            Reset
+          </Button>
+        </Flex>
+      </Dialog>
     </Layout>
   );
 }
